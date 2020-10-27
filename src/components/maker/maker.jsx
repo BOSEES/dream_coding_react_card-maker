@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../header/header";
 import Footer from "../footer/footer";
 import styles from "./maker.module.css";
+import { useHistory } from "react-router-dom";
 
-const Maker = ({authservice}) => {
+const Maker = ({authService}) => {
+  const history = useHistory();
   const logout = () => {
-    authservice.logout();
+    authService.logout();
   }
+
+  useEffect(() => {
+    authService.onAuthChange(user => {
+      if(!user) {
+        history.push("/")
+      }
+    })
+  });
 
   return(
     <section className={styles.maker}>
-    <Header onClick={logout}/>
+    <Header onLogout={logout}/>
     <Footer />
     </section>
   )
