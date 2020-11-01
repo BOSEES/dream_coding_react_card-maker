@@ -12,8 +12,8 @@ const Maker = ({authService}) => {
     {
       id: "bosees1",
       name: "yeoung-il",
-      company: "none",
-      theme: "light",
+      company: "nandnadnan",
+      theme: "dark",
       title: "software engineer",
       email:"rladuddlf3@aasd",
       message:"Hello World",
@@ -23,7 +23,7 @@ const Maker = ({authService}) => {
     {
       id: "bosees2",
       name: "yeoung-il",
-      company: "none",
+      company: "nfdfd",
       theme: "light",
       title: "software engineer",
       email:"rladuddlf3@aasd",
@@ -34,8 +34,8 @@ const Maker = ({authService}) => {
     {
       id: "bosees3",
       name: "yeoung-il",
-      company: "none",
-      theme: "light",
+      company: "dasdas",
+      theme: "colorful",
       title: "software engineer",
       email:"rladuddlf3@aasd",
       message:"Hello World",
